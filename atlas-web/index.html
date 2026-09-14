@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>أطلس المفردات البصرية · Visual Vocabulary Atlas</title>
+  <meta name="description" content="Interactive Arabic chart chooser: 80 types, data-shape tree, same-data studio, chart-crime quiz.">
+  <link rel="stylesheet" href="css/atlas.css">
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true">
+    <filter id="deut">
+      <feColorMatrix type="matrix" values="0.625 0.375 0 0 0  0.70 0.30 0 0 0  0 0.30 0.70 0 0  0 0 0 1 0"/>
+    </filter>
+  </svg>
+
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="#/">
+        <strong id="brand-title">أطلس المفردات البصرية</strong>
+        <span>Visual Vocabulary Atlas</span>
+      </a>
+      <button class="menu-btn" id="menu" type="button" aria-label="menu">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#/" data-i18n="nav_home">الرئيسية</a>
+        <a href="#/choose" data-i18n="nav_choose">الغرض</a>
+        <a href="#/data" data-i18n="nav_data">البيانات</a>
+        <a href="#/gallery" data-i18n="nav_gallery">المعرض</a>
+        <a href="#/play" data-i18n="nav_play">نفس البيانات</a>
+        <a href="#/quiz" data-i18n="nav_quiz">تحقيق</a>
+        <a href="#/compare" data-i18n="nav_compare">قارن</a>
+        <a href="#/principles" data-i18n="nav_principles">المبادئ</a>
+        <a href="#/poster" data-i18n="nav_poster">ملصق</a>
+        <a href="#/sources" data-i18n="nav_sources">المصادر</a>
+      </nav>
+    </div>
+    <div class="ctrl">
+      <div class="search"><input id="q" type="search" placeholder="ابحث عن رسم…" autocomplete="off"></div>
+      <select id="aud" aria-label="audience">
+        <option value="analyst">محلل — الكل</option>
+        <option value="news">صحفي</option>
+        <option value="exec">تنفيذي</option>
+      </select>
+      <button class="chip" id="btn-cb" type="button">ألوان أصلية</button>
+      <button class="chip gold" id="btn-lang" type="button">EN</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="footer">
+    <div class="gold">أطلس المفردات البصرية · 2026</div>
+    <div id="foot-copy">تحرير عربي بمعيار FT Visual Vocabulary و From Data to Viz</div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/extras.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
